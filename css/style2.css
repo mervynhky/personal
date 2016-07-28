@@ -1,0 +1,125 @@
+.ctr-img {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.motto {
+    font: normal 40px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+    0 0 20px rgba(255, 255, 255, 1),
+    0 0 30px rgba(255, 255, 255, 1),
+    0 0 40px rgba(0, 255, 255, 0.7),
+    0 0 70px rgba(0, 255, 255, 0.7),
+    0 0 80px rgba(0, 255, 255, 1),
+    0 0 100px #00ffff;
+    margin-top: 1%;
+}
+
+.oc {
+    text-align:center;
+}
+
+.title-line, .title-line-2, .title-line-3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.title-line span, .title-line-2 span {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    padding: 25px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title-line span:after {
+    position: absolute;
+    width: 32%;
+    height: 3px;
+    right: 0%;
+    background: #fff;
+    content: '';
+    bottom: 35px;
+}
+
+.title-line span:before {
+    position: absolute;
+    width: 32%;
+    height: 3px;
+    left: 0%;
+    background: #fff;
+    content: '';
+    bottom: 35px;
+}
+.title-line-weight-bold {
+    font-weight: bold;
+}
+.title-line-weight-bolder {
+    font-weight: bolder;
+}
+
+.title-line-bright-blue {
+    color: #3498db;
+}
+.title-line-blue {
+    color: #2980b9;
+}
+.title-line-bright-blueMid {
+    color: #34495e;
+}
+.title-line-blueMid {
+    color: #2c3e50;
+}
+.title-line-darkestBlue {
+    color: #1f3a50
+}
+.title-line-bright-red {
+    color: #e74c3c;
+}
+.title-line-red {
+    color: #c0392b;
+}
+.title-line-bright-green {
+    color: #2ecc71;
+}
+.title-line-green {
+    color: #27ae60;
+}
+.title-line-bright-yellow {
+    color: #f1c40f;
+}
+.title-line-orange {
+    color: #f39c12;
+}
+.title-line-carrot {
+    color: #e67e22;
+}
+.title-line-pumpkin {
+    color: #d35400;
+}
+.title-line-amethyst {
+    color: #9b59b6;
+}
+.title-line-purple {
+    color: #8e44ad;
+}
+.title-line-cloud {
+    color: #ecf0f1;
+}
+.title-line-silver {
+    color: #bdc3c7;
+}
+.title-line-concrete {
+    color: #95a5a6;
+}
+.title-line-asbestos {
+    color: #7f8c8d;
+}
+.title-line-darken {
+    color: #1f1f1f;
+}
