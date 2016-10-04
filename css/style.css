@@ -345,3 +345,37 @@ html, body {
     text-indent: 100%;
     background: url(../Images/arrowup.png) no-repeat;
 }
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #6BB9F0;
+}
+
+.carousel-indicators li {
+    border-color: #6BB9F0;
+}
+
+.carousel-indicators li.active {
+    background-color: #6BB9F0;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 40%;
+    margin: auto;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+/*
+use only if you want a semi-transparent grey square background.
+can be rounded with radius.
+
+.carousel-caption{
+    background: rgba(0,0,0,0.5);
+}
+*/
