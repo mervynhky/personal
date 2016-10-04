@@ -12,313 +12,392 @@
         window.scrollTo(0, 1);
     } </script>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/animate.css">
-    <!--nanoGallery start-->
-    <link rel="stylesheet" href="css/nanogallery.css">
-    <!--nanoGallery end-->
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--Home Start-->
-<div id="section1" class="container-fluid">
+<style>
+    .jumbotron {
+        background-color: #f4511e;
+        color: #fff;
+        padding: 100px 25px;
+    }
+    .container-fluid {
+        padding: 60px 50px;
+    }
+    .bg-grey {
+        background-color: #f6f6f6;
+    }
+    .logo-small {
+        color: #f4511e;
+        font-size: 50px;
+    }
+    .logo {
+        color: #f4511e;
+        font-size: 200px;
+    }
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .carousel-control.right, .carousel-control.left {
+        background-image: none;
+        color: #f4511e;
+    }
+    .carousel-indicators li {
+        border-color: #f4511e;
+    }
+    .carousel-indicators li.active {
+        background-color: #f4511e;
+    }
+    .item h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        font-weight: 400;
+        font-style: italic;
+        margin: 70px 0;
+    }
+    .item span {
+        font-style: normal;
+    }
+    .panel {
+        border: 1px solid #f4511e;
+        border-radius:0 !important;
+        transition: box-shadow 0.5s;
+    }
+    .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+    .panel-footer .btn:hover {
+        border: 1px solid #f4511e;
+        background-color: #fff !important;
+        color: #f4511e;
+    }
+    .panel-heading {
+        color: #fff !important;
+        background-color: #f4511e !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .panel-footer {
+        background-color: white !important;
+    }
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+    .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #f4511e;
+        color: #fff;
+    }
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="col-md-12 ctr-img">
-            <img src="Images/tfslogo.png">
-            <p class="motto">Connecting Food Into Your System</p>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1>Company</h1>
+    <p>We specialize in blablabla</p>
+    <form class="form-inline">
+        <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+        <button type="button" class="btn btn-danger">Subscribe</button>
+    </form>
+</div>
+
+<!-- Container (About Section) -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>About Company Page</h2>
+            <h4>Lorem ipsum..</h4>
+            <p>Lorem ipsum..</p>
+            <button class="btn btn-default btn-lg">Get in Touch</button>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
         </div>
     </div>
 </div>
-<!-- Home End-->
-<div id="nav-wrapper">
-    <nav class="navbar navbar-inverse affix-top" data-spy="affix" data-offset-top="710">
-        <div class="container-fluid">
-            <div class="navbar-header brand-image">
-                <img class="navbar-brand" src="Images/logo.png">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="hidden"><a href="#toppage"></a></li>
-                        <li><a class="page-scroll" href="#section1">Home</a></li>
-                        <li><a class="page-scroll" href="#section2">About</a></li>
-                        <li><a class="page-scroll" href="#section3">Services</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cuisines <span
-                                class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="page-scroll" href="#section41">Thai</a></li>
-                                <li><a class="page-scroll" href="#section42">Western</a></li>
-                                <li><a class="page-scroll" href="#section43">Japanese</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="page-scroll" href="#section4">Menu</a></li>
-                        <li><a class="page-scroll" href="#section5">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo"></span>
         </div>
-    </nav>
-</div>
-<!--About Start-->
-<!--TODO: Add chef(s) profile(s)-->
-<div id="section2" class="container-fluid">
-    <div class="container" id="about">
-        <h1 class="title-line title-line-cloud">
-            <span class="title-line-weight-bold">About Us</span>
-        </h1>
-        <div class="about_sec2">
-            <img src="Images/tfslogo.png" class="logo-large fadeInUp">
-            <p class="fadeInLeftBig">
-                This one i tak tau, you fill in yourself later if you want. I'm just gonna auto generate text and
-                put here.
-                分得意 以測機 第十一回 在一處. 第五回 出 事 驚異 意 第八回 德泉淹 第十回 第二回 」 誨
-                โต้หนุ่มกรุงเก่าฉกเงินแม่1.2 ล้านบาทมาปรนเปรอ วีเจ.สาวแอพพลิเคชั่น "ไอโชว์" เปิดบ้านแจง
-                ยันเป็นเพียงหนึ่งในวีเจ.สาวหลายรายที่ฝ่ายชายโอนเงินให้เท่านั้น
-                รู้จักกันผ่านแอพฯ ไม่นานและเพิ่งตกลงคบกันแค่เดือนเศษ ได้เงินจากคู่กรณีแค่ 4 แสน
-                แบ่งเป็นเงินที่ฝ่ายชายฝากให้ซื้อคูปองสำหรับใช้จ่ายและเล่นเกมในแอพฯ 2.6
-                แสนบาท ส่วนที่เหลือระบุให้เป็นค่าใช้จ่ายส่วนตัวของวีเจ.สาว หลังตกเป็นข่าวรีบโอนเงิน 1
-                แสนที่อีกฝ่ายช่วยค่าซื้อเก๋งป้ายแดงคืนไปแล้ว
-            </p>
-            <p class="fadeInRightBig">
-                䯞媥 ぴょ令鰥 䣵䨣樃窯ぺ 䧎るひゅジにゃ, じ鍯 がル獣まよ ちパ儥㣌楜 極骣ウァりゅ鏨 谨も難 禌婧 しゃぞト 润椥じ鍯韩 䥜フョ䧨捨䥵,
-                シュちょヨ にょ驦ず氯ゐ 馺䨩ꤎ姚焧 がル 難ハギェジャりょ 襩ゝゔはめ ぴゅ䣵 揣ちゃ谧 䧥褤 媥毚た饥ひゃ ラ゜䤎ヴェじょ珦 廥ね樧䨯ぴゅ
-                鎌ろミョ し椯 韩饣ぬ ちゃ谧仯ジュ租 ミョりゃ稃じゅツェ べ穨饎と㛤, にょ驦ず氯ゐ べ穨饎と㛤 馺䨩ꤎ姚焧 骣ウァ 鄤壎ちゅ
-            </p>
-            <div class="row main-chef">
-                <div class="col-md-6">
-                    <img> <!--Chef Picture, can be sliding carousel-->
-                </div>
-                <div class="col-md-6">
-                    <h3></h3>
-                    <p></p>
-                    <!--Brief description, professional background if needed-->
-                </div>
-            </div>
-            <div class="row other-chefs"> <!--Other Chefs if any-->
-                <div class="oc col-md-4">
-                    <img> <!--round picture then short desc-->
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <div class="oc col-md-4">
-                    <img>
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <div class="oc col-md-4">
-                    <img>
-                    <h3></h3>
-                    <p></p>
-                </div>
-            </div>
+        <div class="col-sm-8">
+            <h2>Our Values</h2>
+            <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
+            <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
         </div>
     </div>
 </div>
-<!-- About End-->
-<!--Services Start-->
-<!-- TODO: Catering, Take Home Chef, Lessons-->
-<div id="section3" class="container-fluid">
-    <h1 class="title-line title-line-cloud">
-        <span class="title-line-weight-bold">Services</span>
-    </h1>
-    <div class="row" style="text-align: center;">
-        <img src="Images/fart.png">
-    </div>
-    <div class="row" style="text-align: center;">
-        <div class="col-md-4">
-            <img src="Images/fart.png">
-            <h3>Catering</h3>
-            <p>Need help to prepare meals? Just give me a call and I'll be there</p>
+
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center">
+    <h2>SERVICES</h2>
+    <h4>What we offer</h4>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-off logo-small"></span>
+            <h4>POWER</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-md-4">
-            <img src="Images/poo.png">
-            <h3>Take Home Chef</h3>
-            <p>Throwing a party? We can cater food for your stomach and guests</p>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-heart logo-small"></span>
+            <h4>LOVE</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-md-4">
-            <img>
-            <h3>Cooking Lessons</h3>
-            <p>Take me home and let me cook for you in the comfort of your own home</p>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-lock logo-small"></span>
+            <h4>JOB DONE</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
         </div>
     </div>
-    <!--Maybe add carousel to show him cooking at someone house, teaching, sample of catering-->
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-leaf logo-small"></span>
+            <h4>GREEN</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-certificate logo-small"></span>
+            <h4>CERTIFIED</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-wrench logo-small"></span>
+            <h4 style="color:#303030;">HARD WORK</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+    </div>
 </div>
-<!-- Services End-->
-<!-- Menu Start -->
-<!--TODO: Add thumbnail pics, easier navigation-->
-<!--<div id="section4" class="container-fluid">-->
-    <!--<h1 class="title-line title-line-cloud">-->
-        <!--<span class="title-line-weight-bold">Our Recommended Menu</span>-->
-    <!--</h1>-->
 
+<!-- Container (Portfolio Section) -->
+<div class="container-fluid text-center bg-grey">
+    <h2>Portfolio</h2><br>
+    <h4>What we have created</h4>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="paris.jpg" alt="Paris" width="400" height="300">
+                <p><strong>Paris</strong></p>
+                <p>Yes, we built Paris</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="newyork.jpg" alt="New York" width="400" height="300">
+                <p><strong>New York</strong></p>
+                <p>We built New York</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+                <p><strong>San Francisco</strong></p>
+                <p>Yes, San Fran is ours</p>
+            </div>
+        </div>
+    </div>
 
-    <!--<div id="nanoGallery2">-->
-        <!--<a href="image01.jpg" data-ngthumb="image_01ts.jpg" data-ngdesc="พฯ ไม่นานและเพิ่งตกลงคบกันแค่เดือนเศษ ได้เงินจากคู่กรณีแ">Thailand</a>-->
-        <!--<a href="image_02.jpg" data-ngthumb="image_02ts.jpg" data-ngdesc="Toi rat met roi. Luon khong muon lam viec, hieu khong?">Vietnam</a>-->
-        <!--<a href="image_03.jpg" data-ngthumb="image_03ts.jpg" data-ngdesc="ジにゃ, じ鍯 がル獣まよ ちパ儥㣌楜 極骣ウァりゅ鏨 谨も難 禌婧 " data-customdata='{"a":"1", "b":"2"}'>India</a>-->
-    <!--</div>-->
-
-
-
-    <!--<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at-->
-        <!--the navigation bar while scrolling!</p>-->
-    <!--<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at-->
-        <!--the navigation bar while scrolling!</p>-->
-<!--</div>-->
-<!-- Menu End -->
-
-<!-- Menu Start -->
-<div id="section4" class="container-fluid">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <h2>What our customers say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+
+        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img src="Images/image_01.jpg" alt="First Slide">
-                <div class="carousel-caption">
-                    <h3>Thai Food</h3>
-                    <p>Something is supposed to be a lorem ipsum text here</p>
-                </div>
+            <div class="item active">
+                <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
             </div>
-            <div class="carousel-item">
-                <img src="Images/image_02.jpg" alt="Second Slide">
-                <div class="carousel-caption">
-                    <h3>Thai Food</h3>
-                    <p>Something is supposed to be a lorem ipsum text here</p>
-                </div>
+            <div class="item">
+                <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
             </div>
-            <div class="carousel-item">
-                <img src="Images/image_03.jpg" alt="Third Slide">
-                <div class="carousel-caption">
-                    <h3>Thai Food</h3>
-                    <p>Something is supposed to be a lorem ipsum text here</p>
-                </div>
+            <div class="item">
+                <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
             </div>
         </div>
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
 </div>
-<!-- Menu End -->
-<!--Thai Menu Start-->
-<div id="section41" class="container-fluid">
-    <h1 class="title-line title-line-cloud">
-        <span class="title-line-weight-bold">Our Thai Cuisine</span>
-    </h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-</div>
-<!-- Thai Menu End-->
-<!-- Western Menu Start-->
-<div id="section42" class="container-fluid">
-    <h1 class="title-line title-line-cloud">
-        <span class="title-line-weight-bold">Our Western Cuisine</span>
-    </h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-</div>
-<!-- Western Menu End-->
-<!-- Japanese Menu Start-->
-<div id="section43" class="container-fluid">
-    <h1 class="title-line title-line-cloud">
-        <span class="title-line-weight-bold">Our Japanese Cuisine</span>
-    </h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-</div>
-<!-- Japanese Menu End-->
-<!-- Contact Start-->
-<div id="section5" class="container-fluid">
-    <h1 class="title-line title-line-cloud">
-        <span class="title-line-weight-bold">Contact Us</span>
-    </h1>
-    <div class="contact_info">
-        <div class="info_box">
-            <p>
-                10991, Jalan SS 24/8,
-                <br>Taman Megah,Petaling Jaya
-                <br>47301 , Selangor Darul Ehsan
-                <br>Malaysia
-                <br><br>
-                03-6969 888
-                <br><br>
-                012-010 6969
-                <br><br>
-                ernie@tfs.com
-            </p>
-        </div>
+
+<!-- Container (Pricing Section) -->
+<div class="container-fluid">
+    <div class="text-center">
+        <h2>Pricing</h2>
+        <h4>Choose a payment plan that works for you</h4>
     </div>
-    <h1 class="title-line title-line-cloud">
-        <span class="title-line-weight-bold">OR</span>
-    </h1>
-    <div class="contact_desc">
-        <p>Leave us an e-mail and we will get back to you as soon as possible!</p>
-    </div>
-    <div class="contact_box">
-        <div class="col-md-6 contact_form">
-            <form>
-                <div class="left_form">
-                    <input type="text" class="text" value="Name" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Name';}">
-                    <input type="text" class="text" value="Email" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:2.7%">
-                    <input type="text" class="text" value="Phone Number" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Number';}">
-                    <input type="text" class="text" value="Subject" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Subject';}" style="margin-left:2.7%">
-                    <input type="text" class="text" value="Address" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Address';}" style="width:100%;">
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Basic</h1>
                 </div>
-                <div class="right_form">
-                            <textarea value="Message:" onfocus="this.value = '';"
-                                      onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+                <div class="panel-body">
+                    <p><strong>20</strong> Lorem</p>
+                    <p><strong>15</strong> Ipsum</p>
+                    <p><strong>5</strong> Dolor</p>
+                    <p><strong>2</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
                 </div>
-                <div class="form-submit1">
-                    <label class="btn btn-primary btn-normal btn-inline " target="_self">
-                        <input type="submit" value="Send">
-                    </label>
+                <div class="panel-footer">
+                    <h3>$19</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
                 </div>
-                <div class="clearfix"></div>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1675.035691491368!2d101.61225564112975!3d3.1135601388870016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdce690ac08466523!2sMing+Tien!5e0!3m2!1sen!2s!4v1469162257219"></iframe>
             </div>
         </div>
-        <div class="clearfix"></div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Pro</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>50</strong> Lorem</p>
+                    <p><strong>25</strong> Ipsum</p>
+                    <p><strong>10</strong> Dolor</p>
+                    <p><strong>5</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$29</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Premium</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>100</strong> Lorem</p>
+                    <p><strong>50</strong> Ipsum</p>
+                    <p><strong>25</strong> Dolor</p>
+                    <p><strong>10</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$49</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
-</div>>
-<div class="ft_cr">
-    <p>Copyright © 2016 True Fuse Style. All Sohais Deserved | Design by
-        <a href="http://www.google.com/" target="_blank">Sohai</a>
-    </p>
 </div>
-<!-- Contact End-->
+
+<!-- Container (Contact Section) -->
+<div class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+    var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+    function initialize() {
+        var mapProp = {
+            center:myCenter,
+            zoom:12,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker = new google.maps.Marker({
+            position:myCenter,
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <!--jQuery core-->
 <script src="js/jQuery1124.js"></script>
 <!--Bootstrap core-->
@@ -336,20 +415,7 @@
     });
 </script>
 <script>
-    $(document).ready(function(){
-        jQuery("#nanoGallery2").nanoGallery({thumbnailWidth:250,thumbnailHeight:250,
-            itemsBaseURL:'Images',
-            thumbnailHoverEffect:[{'name':'scaleLabelOverImage','duration':300},{'name':'borderLighter'}],
-            colorScheme:'clean',
-            locationHash: false,
-            thumbnailLabel:{display:true,position:'overImageOnTop', align:'center'},
-            viewerDisplayLogo:true
-        });
-    })
 
-    $('.carousel').carousel({
-        interval: 2000
-    })
 </script>
 <a class="scroll" href="#section1" id="navTopArrow" style="display: block;">
     <span id="navTopArrowHover" style="opacity: 1;"> </span>
